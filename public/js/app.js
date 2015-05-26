@@ -4,7 +4,7 @@ $(document).ready(function () {
   $.ajax('/dropdown/templates.json').success(function(data) {
     $("#ignoreSearch").select2({
       placeholder: "Search Operating Systems, IDEs, or Programming Languages",
-      multiple: true,
+      tags: true,
       minimumInputLength: 1,
       data: data
     });
